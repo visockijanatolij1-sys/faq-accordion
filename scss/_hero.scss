@@ -92,6 +92,20 @@
     flex: 0 0 30px;
     display: block;
     background: url("../image/icon-plus.svg") center / cover no-repeat;
+    transition: all 0.3s ease 0s;
+}
+
+.question-switcher.active{
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    display: block;
+    background: url("../image/icon-minus.svg") center / cover no-repeat;
+}
+
+.answer{
+    transition: all 0.3s ease 0s;
+
 }
 
 @media (max-width: 607px) {
@@ -102,8 +116,7 @@
         display: flex;
         justify-content: space-between;
         align-items: start;
-        justify-content: flex-end;
-        gap: 80px;
+        gap: 16px;
     }
     .question-switcher{
         width: 30px;
@@ -111,4 +124,8 @@
         overflow: hidden;
         
     }
+}
+
+.hidden{
+    display: none;
 }
